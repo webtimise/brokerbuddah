@@ -19,7 +19,7 @@ sections.forEach((section, i) => {
 
 function setSection(newSection) {
   if (newSection !== currentSection) {
-    gsap.to(currentSection, {scale: 0.9, autoAlpha: 0});
+    gsap.to(currentSection, {scale: 0.8, autoAlpha: 0});
 //    gsap.to(currentSection, {scale: 1, autoAlpha: 0})
     gsap.to(newSection, {scale: 1, autoAlpha: 1});
     currentSection = newSection;
