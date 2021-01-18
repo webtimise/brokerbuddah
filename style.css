@@ -14,5 +14,5 @@ html, body {
 section:not(.first) {
     opacity: 0;
     visibility: hidden;
-    /*  transform: scale(0.9);*/
+    transform: scale(0.9);
 } 
