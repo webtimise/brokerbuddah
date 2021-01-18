@@ -1,7 +1,7 @@
 let sections = gsap.utils.toArray("section"),
     currentSection = sections[0];
 
-gsap.defaults({overwrite: 'auto', duration: 0.8});
+gsap.defaults({overwrite: 'auto', duration: 0.4});
 
 // stretch out the body height according to however many sections there are. 
 gsap.set("body", {height: (sections.length * 100) + "%"});
