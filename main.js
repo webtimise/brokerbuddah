@@ -13,7 +13,16 @@ sections.forEach((section, i) => {
     start: () => (i - 0.5) * innerHeight,
     end: () => (i + 0.5) * innerHeight,
     // when a new section activates (from either direction), set the section accordinglyl.
-    onToggle: self => self.isActive && setSection(section)
+    onToggle: self => self.isActive && setSection(section),
+
+    onEnter: () => {
+      gsap.to(".step-action", {backgroundColor: 'rgba(0,0,0,0.6)', overwrite: 'auto'})
+      },
+    onLeaveBack: () => {
+      gsap.to(".step-action", {backgroundColor: 'rgba(0,0,0,0)', overwrite: 'auto'})
+    },
+    markers: true
+
   });
 });
 
