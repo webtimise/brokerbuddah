@@ -18,9 +18,11 @@ sections.forEach((section, i) => {
     onEnter: () => {
       gsap.from(".step-action", {y: 10, autoAlpha: 1})
       },
+    /*
     onLeaveBack: () => {
       gsap.to(".step-action", {y: 0, autoAlpha: 1})
     },
+    */
     markers: true
 
   });
