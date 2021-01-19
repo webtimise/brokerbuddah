@@ -16,10 +16,10 @@ sections.forEach((section, i) => {
     onToggle: self => self.isActive && setSection(section),
 
     onEnter: () => {
-      gsap.from(".step-action", {y: 10, duration: 1, autoAlpha: 1})
+      gsap.from(".step-action", {y: 10, duration: 0.5, autoAlpha: 1})
       },
     onLeave: () => {
-      gsap.to(".step-action", {y: 0, duration: 1, autoAlpha: 0})
+      gsap.to(".step-action", {y: 0, duration: 0.5, autoAlpha: 0})
     },
     markers: true
 
