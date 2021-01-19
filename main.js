@@ -16,7 +16,7 @@ sections.forEach((section, i) => {
     onToggle: self => self.isActive && setSection(section),
 
     onEnter: () => {
-      gsap.from(".step-action", {y: 10, autoAlpha: 0})
+      gsap.from(".step-action", {y: 10, autoAlpha: 0}),
       gsap.from(".agent.center.slide", {x: 10, autoAlpha: 0})
       },
     onEnterBack: () => {
