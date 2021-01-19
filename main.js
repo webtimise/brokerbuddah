@@ -24,8 +24,8 @@ sections.forEach((section, i) => {
       gsap.from(".step-action", {y: -10, opacity: 1})
     },
     onLeave: () => {
-      gsap.to(".step-action", {y: 0, opacity: 1})
-//      gsap.from(".insured.center.slide", {xPercent: -10, opacity: 1, duration: 1})
+      gsap.to(".step-action", {y: 20, opacity: 1}),
+      gsap.to(".insured.center.slide", {x: 0, opacity: 1, duration: 1})
       },
     markers: true
 
