@@ -18,7 +18,7 @@ sections.forEach((section, i) => {
     onEnter: () => {
       gsap.from(".step-action", {y: 10, opacity: 1}),
 //      gsap.from(".agent.center.slide", {x: -100, autoAlpha: 0, duration: 1})
-      gsap.from(".insured.center.slide", {xPercent: -10, opacity: 1, duration: 1})
+      gsap.from(".insured.center.slide", {xPercent: 20, opacity: 1, duration: 1})
       },
     onEnterBack: () => {
       gsap.from(".step-action", {y: -10, autoAlpha: 0})
